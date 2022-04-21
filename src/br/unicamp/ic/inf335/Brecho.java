@@ -18,8 +18,8 @@ public class Brecho {
 		produtos.add(new ProdutoBean("CD00006","Prod 6 ...", "Bla Bla Bla",1500.0,"Bla Bla Bla"));
 		
 		// Imprime produtos
-		for (int i=1; i<=produtos.size(); i++) {
-			System.out.println("Codigo = " + produtos.get(i).getCodigo() + " Nome = " + produtos.get(i).getNome() + " Valor = " + produtos.get(i).getValor());
+		for (ProdutoBean produto : produtos) {
+			System.out.println("Codigo = " + produto.getCodigo() + " Nome = " + produto.getNome() + " Valor = " + produto.getValor());
 		}
 		
 		// Ordena produtos
