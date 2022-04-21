@@ -27,8 +27,8 @@ public class Brecho {
 		
 		System.out.println("-------------------- Produtos Ordenados -------------------");
 		// Imprime produtos ordenados
-		for (int i=1; i<=produtos.size(); i++) {
-			System.out.println("Codigo = " + produtos.get(i).getCodigo() + " Nome = " + produtos.get(i).getNome() + " Valor = " + produtos.get(i).getValor());
+		for (ProdutoBean produto : produtos) {
+			System.out.println("Codigo = " + produto.getCodigo() + " Nome = " + produto.getNome() + " Valor = " + produto.getValor());
 		}
 		
 		// Calcula M�dia
